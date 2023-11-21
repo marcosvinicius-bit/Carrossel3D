@@ -1,0 +1,105 @@
+@charset "utf-8";
+
+body{
+    margin: 0;
+    background: rgb(231, 87, 87)255, 255);
+    font-family: sans-serif;
+    color: red;
+    background-image: url(https://images.hdqwalls.com/download/black-hole-space-4k-4v-1280x800.jpg)
+    
+}
+
+
+.container{
+    position: relative;
+    width: 320px;
+    margin: 100px auto 0 auto;
+    perspective: 900px;
+}
+
+.carrossel{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    animation: rotate360 35s infinite forwards linear;
+}
+
+.imagem{
+    position: absolute;
+    width: 290px;
+    height: 187;
+    top: 40px;
+    left: 10px;
+    right: 10px;
+    background-size: cover;
+    display: flex;
+}
+
+.imagem span{
+    margin: auto;
+    font-size: 1.2em;
+    text-align: center;
+    background: #27272774;
+}
+
+@keyframes rotate360{
+    from{
+        transform: rotateY(0deg);
+    
+    }
+
+    to{
+        transform: rotateY(-360deg);
+
+    }
+}
+
+.imagem:nth-child(1){
+    background-image: url(https://static.wikia.nocookie.net/kurokonobasuke/images/7/77/Shintaro_Midorima_anime.png/revision/latest?cb=20121105202436);
+    transform: rotateY(0deg) translatez(430px);
+}
+
+.imagem:nth-child(2){
+    background-image: url(https://sm.ign.com/ign_br/screenshot/default/download-1_jrv3.jpg);
+    transform: rotateY(40deg) translatez(430px);
+}
+
+.imagem:nth-child(3){
+    background-image: url(https://static.wikia.nocookie.net/ahirunosora/images/b/bb/Sora_Kurumatani-0.png/revision/latest?cb=20200623004324);
+    transform: rotateY(80deg) translatez(430px);
+}
+
+.imagem:nth-child(4){
+    background-image: url(https://play-lh.googleusercontent.com/uHohvjrYg4TdTg0bombXEenvLaxUfmeeqkDQN8OK57l6d2E94RUhzlpmtuFRbeu5xj8);
+    transform: rotateY(120deg) translatez(430px);
+}
+
+.imagem:nth-child(5){
+    background-image: url(https://static1.thegamerimages.com/wordpress/wp-content/uploads/2022/10/grimsely-pokemon.jpeg);
+    transform: rotateY(160deg) translatez(430px);
+}
+
+.imagem:nth-child(6){
+    background-image: url(https://static.wikia.nocookie.net/naruto/images/b/b1/Naruto_Uzumaki_%28Infobox_Parte_II_B%29.png/revision/latest/scale-to-width/360?cb=20210210161020&path-prefix=pt-br);
+    transform: rotateY(200deg) translatez(430px);
+}
+.imagem:nth-child(7){
+    background-image: url(https://imagem.natelinha.uol.com.br/original/herbiemeufusca_320fdef9035bfc1b162c23757517ba2a2f160772.jpeg);
+    transform: rotateY(240deg) translatez(430px);
+}
+
+.imagem:nth-child(8){
+    background-image: url(data:image/jpeg;base64,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);
+    transform: rotateY(280deg) translatez(430px);
+}
+
+.imagem:nth-child(9){
+    background-image: url(https://imagem.natelinha.uol.com.br/original/herbiemeufusca_320fdef9035bfc1b162c23757517ba2a2f160772.jpeg);
+    transform: rotateY(320deg) translatez(430px);
+}
+
+body{
+    text-align: center;
+    font-size: large;
+}
